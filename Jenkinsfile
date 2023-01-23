@@ -13,7 +13,7 @@ stages{
       steps {
         script {
           kubernetesDeploy(configs: [["pod.yaml",
-                           "nginx1.yaml"]] 
+                           "nginx1.yaml"]], 
                            kubeconfigId: "k8oldplugin")
           
           
