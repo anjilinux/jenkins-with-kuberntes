@@ -19,9 +19,12 @@ stages{
   
    stage("another method step"){
      steps{
+       script {
      sh 'kubectl apply -f  nginx1.yaml'
-     }       
+      }       
+     }
    }
-
+     
+     
  }
 }
