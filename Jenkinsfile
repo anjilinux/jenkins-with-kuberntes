@@ -9,24 +9,24 @@ stages{
 
   }
       
-//     stage('Deploy App') {
-//       steps {
-//         script {
-//           kubernetesDeploy(configs: "pod.yaml,nginx1.yaml,dp3.yaml",    kubeconfigId: "k8oldplugin")
+    stage('Deploy App') {
+      steps {
+        script {
+          kubernetesDeploy(configs: "pod.yaml,nginx1.yaml,dp3.yaml",    kubeconfigId: "k8oldplugin")
                           
                           
           
           
-//         }
-//       }
-//     }  
-
-  stage( " cli commands through deployment" ) {
-    steps{
-      sh 'kubectl apply -f dp3.yaml'
-    
+        }
+      }
     }  
-  }
+
+//   stage( " cli commands through deployment" ) {
+//     steps{
+//       sh 'kubectl apply -f dp3.yaml'
+    
+//     }  
+//   }
 
 }
 
