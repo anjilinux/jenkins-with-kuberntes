@@ -18,7 +18,7 @@ stages{
  }
  stage (" kube manifest files"){
   steps{
-    kubernetesDeploy(configs: "pod.yaml,nginx1.yaml,dp3yaml", kubeconfigId: "	k8oldplugin")
+    kubernetesDeploy(configs: "pod.yaml,nginx1.yaml,dp3yaml", kubeconfigId: "kubefile")
   }
  }  
 
