@@ -17,7 +17,7 @@ spec:
       spec: 
        containers: 
          - name: nginx-dp
-           image: nginx
+           image: anjireddy3993/nginx:latest
            ports: 
             - containerPort: 80        
 ---
