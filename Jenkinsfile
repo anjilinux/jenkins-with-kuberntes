@@ -12,7 +12,7 @@ stages{
         sh 'docker images'
         sh 'docker login -u anjireddy3993  -p ASDasd123$'
         sh 'docker push  anjireddy3993/nginx:latest'
-        echo " all is success"
+        echo " all is success ok  "
 
     }
  }
